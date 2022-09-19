@@ -7,6 +7,7 @@ function App() {
   return (
     <Layout>
       <Home />
+      {/* <div className="spacer home-background"></div> */}
       <Contact />
       <Footer />
     </Layout>

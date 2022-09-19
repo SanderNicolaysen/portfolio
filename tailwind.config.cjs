@@ -1,14 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['inter', 'serif'],
+      },
       backgroundImage: {
-        'home-background': "url('/src/assets/wave-haikei.svg')",
+        borderColor: ['focus-visible', 'first'],
       },
       colors: {
-        dark: '#12181B',
-        secondary: '#2A2E34',
+        dark: '#181818',
+        secondary: '#212121',
         blue: {
           50: '#7bbcff',
           100: '#71b2ff',

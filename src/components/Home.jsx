@@ -5,11 +5,11 @@ import { SiHashnode } from 'react-icons/si'
 
 const Home = () => {
   return (
-    <>
-      <header name="home" className={`grid md:grid-cols-2 gap-4 place-items-center h-screen mx-16`}>
-        {/* <div
-          className="md:h-44 md:w-30 bg-cover bg-no-repeat lg:w-44 lg:h-72 my-8 border-1 rounded-md"
-        ></div> */}
+    <div className="h-screen relative">
+      <header
+        name="home"
+        className={`grid md:grid-cols-2 gap-4 place-items-center h-full container mx-auto relative z-10`}
+      >
         <div className="">
           <h1 className="font-bold uppercase text-3xl">Sander Nicolaysen</h1>
           <h2 className="font-bold uppercase text-sm text-gradient-blue mt-1">Full Stack Developer</h2>
@@ -27,7 +27,8 @@ const Home = () => {
           <img src={Programmer} alt="person on computer" />
         </div>
       </header>
-    </>
+      {/* <div className="spacer home-background-2 absolute bottom-0"></div> */}
+    </div>
   )
 }
 
