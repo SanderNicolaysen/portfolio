@@ -16,13 +16,25 @@ const Home = () => {
         experiences. Currently, I’m focused on building responsive full-stack web applications.
       </p>
       <div className="flex gap-3 mb-16">
-        <a className="cursor-pointer" target="_blank" href="https://github.com/SanderNicolaysen">
+        <a
+          className="cursor-pointer transition-all duration-300 transform hover:scale-125"
+          target="_blank"
+          href="https://github.com/SanderNicolaysen"
+        >
           {<FaGithub size={22} />}
         </a>
-        <a className="cursor-pointer" target="_blank" href="https://www.linkedin.com/in/sandernicolaysen/">
+        <a
+          className="cursor-pointer transition-all duration-300 transform hover:scale-125"
+          target="_blank"
+          href="https://www.linkedin.com/in/sandernicolaysen/"
+        >
           {<FaLinkedin size={22} />}
         </a>
-        <a className="cursor-pointer" target="_blank" href="mailto: nicolaysensander96@gmail.com">
+        <a
+          className="cursor-pointer transition-all duration-300 transform hover:scale-125"
+          target="_blank"
+          href="mailto: nicolaysensander96@gmail.com"
+        >
           {<HiOutlineMail size={22} />}
         </a>
       </div>

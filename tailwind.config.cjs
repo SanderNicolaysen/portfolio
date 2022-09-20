@@ -7,8 +7,8 @@ module.exports = {
       fontFamily: {
         rubik: ['Rubik', 'serif'],
       },
-      backgroundImage: {
-        borderColor: ['focus-visible', 'first'],
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       },
       colors: {
         dark: '#181818',

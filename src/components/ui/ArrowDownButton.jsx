@@ -2,8 +2,12 @@ import { FaArrowDown } from 'react-icons/fa'
 
 const ArrowDownButton = () => {
   return (
-    <div className="p-4 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center animate-bounce cursor-pointer dark:white">
-      <FaArrowDown className="flex-shrink-0" size={20} />
+    <div className="py-1 px-2 text-darkGray bg-green-500 hover:text-green-500 hover:bg-darkGray transition-all duration-300 rounded flex items-center justify-center animate-bounce cursor-pointer">
+      {/* <FaArrowDown className="flex-shrink-0" size={20} /> */}
+      <p className="uppercase flex items-center justify-center font-semibold text-sm">
+        Works
+        <FaArrowDown className="inline ml-1" size={13} />
+      </p>
     </div>
   )
 }

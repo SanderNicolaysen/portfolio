@@ -15,6 +15,10 @@
   @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-600;
 }
 
+.animated-b-border {
+  @apply after:content-[''] after:w-0 after:h-1 after:transition-all after:bg-green-500 after:block hover:after:w-full after:duration-300;
+}
+
 .spacer {
   aspect-ratio: 960 / 300;
   width: 100%;
