@@ -12,7 +12,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-scroll": "^1.8.7"
+    "react-scroll": "^1.8.7",
+    "react-tsparticles": "^2.3.1",
+    "tsparticles": "^2.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

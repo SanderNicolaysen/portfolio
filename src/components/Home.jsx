@@ -1,34 +1,33 @@
-import Programmer from '../assets/undraw_programming_re_kg9v.svg'
-import LinkButton from './ui/LinkButton'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { SiHashnode } from 'react-icons/si'
+import PersonCoding from '../assets/person-coding.svg'
+import { HiOutlineMail } from 'react-icons/hi'
+import ArrowDownButton from './ui/ArrowDownButton'
 
 const Home = () => {
   return (
-    <div className="h-screen relative">
-      <header
-        name="home"
-        className={`grid md:grid-cols-2 gap-4 place-items-center h-full container mx-auto relative z-10`}
-      >
-        <div className="">
-          <h1 className="font-bold uppercase text-3xl">Sander Nicolaysen</h1>
-          <h2 className="font-bold uppercase text-sm text-gradient-blue mt-1">Full Stack Developer</h2>
-          <p className="text-lg mt-3">
-            I’m a full-stack developer specializing in building (and occasionally designing) exceptional digital
-            experiences. Currently, I’m focused on building responsive full-stack web applications.
-          </p>
-          <div className="mt-4 flex gap-4">
-            <LinkButton icon={<FaGithub />} link="https://github.com/SanderNicolaysen" />
-            <LinkButton icon={<FaLinkedin />} link="https://www.linkedin.com/in/sandernicolaysen/" />
-            <LinkButton icon={<SiHashnode />} link="#" />
-          </div>
-        </div>
-        <div className="hidden md:block">
-          <img src={Programmer} alt="person on computer" />
-        </div>
-      </header>
-      {/* <div className="spacer home-background-2 absolute bottom-0"></div> */}
-    </div>
+    <header name="home" className="min-h-screen flex items-center justify-center flex-col container mx-auto">
+      <img className="mb-4 mt-16" src={PersonCoding} alt="SVG icon of person coding" />
+      <h1 className="text-4xl font-bold text-center uppercase">
+        SANDER <span className="text-green-500">NICOLAYSEN</span>
+      </h1>
+      <p className="uppercase font-bold text-xl mb-4">Fullstack Developer</p>
+      <p className="max-w-xl mb-8 text-center">
+        I’m a full-stack developer specializing in building (and occasionally designing) exceptional digital
+        experiences. Currently, I’m focused on building responsive full-stack web applications.
+      </p>
+      <div className="flex gap-3 mb-16">
+        <a className="cursor-pointer" target="_blank" href="https://github.com/SanderNicolaysen">
+          {<FaGithub size={22} />}
+        </a>
+        <a className="cursor-pointer" target="_blank" href="https://www.linkedin.com/in/sandernicolaysen/">
+          {<FaLinkedin size={22} />}
+        </a>
+        <a className="cursor-pointer" target="_blank" href="mailto: nicolaysensander96@gmail.com">
+          {<HiOutlineMail size={22} />}
+        </a>
+      </div>
+      <ArrowDownButton />
+    </header>
   )
 }
 

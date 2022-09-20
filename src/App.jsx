@@ -2,15 +2,19 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import Layout from './components/Layout'
 import Footer from './components/Footer'
+import Particle from './components/Particle'
 
 function App() {
   return (
-    <Layout>
-      <Home />
-      {/* <div className="spacer home-background"></div> */}
-      <Contact />
-      <Footer />
-    </Layout>
+    <>
+      {/* <Particle /> */}
+      <Layout>
+        <Home />
+        {/* <div className="spacer home-background"></div> */}
+        {/* <Contact /> */}
+        <Footer />
+      </Layout>
+    </>
   )
 }
 
