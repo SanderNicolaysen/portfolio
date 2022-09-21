@@ -16,7 +16,7 @@
 }
 
 .animated-b-border {
-  @apply after:content-[''] after:w-0 after:h-1 after:transition-all after:bg-green-500 after:block hover:after:w-full after:duration-300;
+  @apply after:content-[''] after:block after:m-auto after:h-[3px] after:w-0 after:bg-transparent after:transition-all after:duration-300 after:ease-in-out hover:after:bg-green-500 hover:after:w-full;
 }
 
 .spacer {

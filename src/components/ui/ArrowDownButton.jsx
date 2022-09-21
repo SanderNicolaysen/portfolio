@@ -1,14 +1,18 @@
 import { FaArrowDown } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 const ArrowDownButton = () => {
   return (
-    <div className="py-1 px-2 text-darkGray bg-green-500 hover:text-green-500 hover:bg-darkGray transition-all duration-300 rounded flex items-center justify-center animate-bounce cursor-pointer">
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      className="py-2 px-4 text-darkGray-500 bg-green-500 rounded flex items-center justify-center cursor-pointer shadow-lg shadow-green-500/50"
+    >
       {/* <FaArrowDown className="flex-shrink-0" size={20} /> */}
       <p className="uppercase flex items-center justify-center font-semibold text-sm">
         Works
-        <FaArrowDown className="inline ml-1" size={13} />
+        <FaArrowDown className="inline ml-1 animate-bounce" size={14} />
       </p>
-    </div>
+    </motion.div>
   )
 }
 

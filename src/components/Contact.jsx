@@ -1,5 +1,4 @@
 import React from 'react'
-import Letter from '../assets/undraw_letter_re_8m03.svg'
 
 const Contact = () => {
   return (

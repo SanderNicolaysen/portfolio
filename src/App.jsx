@@ -2,7 +2,7 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import Layout from './components/Layout'
 import Footer from './components/Footer'
-import Particle from './components/Particle'
+import { motion } from 'framer-motion'
 
 function App() {
   return (
