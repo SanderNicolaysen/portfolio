@@ -27,14 +27,14 @@ const Home = () => {
         Quod cupiditate consequuntur veniam explicabo minus reiciendis voluptate
         saepe praesentium.
       </p>
-      <div className="flex gap-3 mb-16">
+      <div className="flex gap-5 mb-16">
         <motion.a
           whileHover={{ scale: 1.3 }}
           className="cursor-pointer"
           target="_blank"
           href="https://github.com/SanderNicolaysen"
         >
-          {<FaGithub size={22} />}
+          {<FaGithub size={25} />}
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.3 }}
@@ -42,7 +42,7 @@ const Home = () => {
           target="_blank"
           href="https://www.linkedin.com/in/sandernicolaysen/"
         >
-          {<FaLinkedin size={22} />}
+          {<FaLinkedin size={25} />}
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.3 }}
@@ -50,7 +50,7 @@ const Home = () => {
           target="_blank"
           href="mailto: nicolaysensander96@gmail.com"
         >
-          {<HiOutlineMail size={22} />}
+          {<HiOutlineMail size={25} />}
         </motion.a>
       </div>
       <ArrowDownButton />
