@@ -65,9 +65,9 @@ const PersonCodingAnimated = () => {
   return (
     <>
       <svg
-        width="483"
+        width="343"
         height="291"
-        viewBox="0 0 483 291"
+        viewBox="0 44.56 330.46 246.44"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
