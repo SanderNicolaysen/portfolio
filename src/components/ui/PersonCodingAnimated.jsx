@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 const taskLineVariant = {
   hidden: { opacity: 0, pathLength: 0 },
@@ -7,7 +7,7 @@ const taskLineVariant = {
     pathLength: 1,
     transition: { duration: 1, ease: 'easeInOut' },
   },
-};
+}
 
 const tasksContainerVariant = {
   hidden: {},
@@ -17,19 +17,19 @@ const tasksContainerVariant = {
       delayChildren: 1,
     },
   },
-};
+}
 
 const taskVariant = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
-};
+}
 
 const svgVariant = {
   hidden: {},
   visible: {
     transition: {},
   },
-};
+}
 
 const smokeVariant = {
   hidden: {},
@@ -43,18 +43,12 @@ const smokeVariant = {
       duration: 8,
     },
   },
-};
+}
 
 const PersonCodingAnimated = () => {
   return (
     <>
-      <svg
-        width="343"
-        height="291"
-        viewBox="0 44.56 330.46 246.44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="343" height="291" viewBox="0 44.56 330.46 246.44" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="undraw_version_control_re_mg66 1" clipPath="url(#clip0_75_67)">
           <g id="Group 100">
             <path
@@ -71,7 +65,8 @@ const PersonCodingAnimated = () => {
           <path
             id="Path 944"
             d="M330.018 254.439H0.444708C0.322485 254.425 0.209514 254.367 0.127449 254.276C0.0453831 254.184 0 254.066 0 253.943C0 253.82 0.0453831 253.702 0.127449 253.61C0.209514 253.519 0.322485 253.461 0.444708 253.447H330.018C330.14 253.461 330.253 253.519 330.335 253.61C330.417 253.702 330.462 253.82 330.462 253.943C330.462 254.066 330.417 254.184 330.335 254.276C330.253 254.367 330.14 254.425 330.018 254.439V254.439Z"
-            fill="#CACACA"
+            // fill="#CACACA"
+            className="fill-gray-200 dark:fill-darkGray-500"
           />
           <path
             id="Vector"
@@ -172,18 +167,9 @@ const PersonCodingAnimated = () => {
             stroke="#3F3D56"
             strokeWidth={0.6}
           />
-          <motion.g
-            id="tasks"
-            variants={tasksContainerVariant}
-            initial="hidden"
-            animate="visible"
-          >
+          <motion.g id="tasks" variants={tasksContainerVariant} initial="hidden" animate="visible">
             <motion.g id="task1" variants={taskVariant}>
-              <path
-                id="Vector_10"
-                d="M279.137 56.3297H228.692V60.8086H279.137V56.3297Z"
-                fill="#347F9E"
-              />
+              <path id="Vector_10" d="M279.137 56.3297H228.692V60.8086H279.137V56.3297Z" fill="#347F9E" />
               <path
                 id="Vector_11"
                 d="M222.544 63.6407H211.865V53H222.544V63.6407ZM212.555 62.9532H221.854V53.6875H212.555L212.555 62.9532Z"
@@ -191,11 +177,7 @@ const PersonCodingAnimated = () => {
               />
             </motion.g>
             <motion.g id="task2" variants={taskVariant}>
-              <path
-                id="Vector_12"
-                d="M279.137 71.2594H228.692V75.7383H279.137V71.2594Z"
-                fill="#347F9E"
-              />
+              <path id="Vector_12" d="M279.137 71.2594H228.692V75.7383H279.137V71.2594Z" fill="#347F9E" />
               <path
                 id="Vector_13"
                 d="M222.544 78.5702H211.865V67.9297H222.544V78.5702ZM212.555 77.8828H221.854V68.6172H212.555L212.555 77.8828Z"
@@ -203,11 +185,7 @@ const PersonCodingAnimated = () => {
               />
             </motion.g>
             <motion.g id="task3" variants={taskVariant}>
-              <path
-                id="Vector_14"
-                d="M279.137 86.189H228.692V90.6678H279.137V86.189Z"
-                fill="#347F9E"
-              />
+              <path id="Vector_14" d="M279.137 86.189H228.692V90.6678H279.137V86.189Z" fill="#347F9E" />
               <path
                 id="Vector_15"
                 d="M222.544 93.4997H211.865V82.8593H222.544V93.4997ZM212.555 92.8123H221.854V83.5467H212.555L212.555 92.8123Z"
@@ -220,12 +198,7 @@ const PersonCodingAnimated = () => {
             d="M88.5 183C92.6421 183 96 179.642 96 175.5C96 171.358 92.6421 168 88.5 168C84.3579 168 81 171.358 81 175.5C81 179.642 84.3579 183 88.5 183Z"
             fill="#347F9E"
           />
-          <motion.g
-            id="smoke"
-            variants={smokeVariant}
-            initial="hidden"
-            animate="visible"
-          >
+          <motion.g id="smoke" variants={smokeVariant} initial="hidden" animate="visible">
             <path
               id="Vector_16"
               d="M222.66 221.874C221.742 215.719 221.5 209.482 221.937 203.274L222.66 193C218.678 200.894 219.578 211.284 222.66 221.874V221.874Z"
@@ -245,7 +218,7 @@ const PersonCodingAnimated = () => {
         </defs>
       </svg>
     </>
-  );
-};
+  )
+}
 
-export default PersonCodingAnimated;
+export default PersonCodingAnimated
