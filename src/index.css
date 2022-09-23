@@ -19,6 +19,10 @@
   @apply after:content-[''] after:block after:m-auto after:h-[3px] after:w-0 after:bg-transparent after:transition-all after:duration-300 after:ease-in-out hover:after:bg-green-500 hover:after:w-full;
 }
 
+.tap-highlight-color-disable {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .spacer {
   aspect-ratio: 960 / 300;
   width: 100%;
