@@ -1,5 +1,5 @@
-import { FaArrowDown } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { FaArrowDown } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 const ArrowDownButton = () => {
   return (
@@ -9,11 +9,11 @@ const ArrowDownButton = () => {
     >
       {/* <FaArrowDown className="flex-shrink-0" size={20} /> */}
       <p className="uppercase flex items-center justify-center font-semibold text-sm">
-        Works
+        Explore
         <FaArrowDown className="inline ml-1 animate-bounce" size={14} />
       </p>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ArrowDownButton;
+export default ArrowDownButton

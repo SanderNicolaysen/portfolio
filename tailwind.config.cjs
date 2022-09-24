@@ -8,11 +8,23 @@ module.exports = {
         rubik: ['Rubik', 'serif'],
       },
       animation: {
-        'spin-slow': 'spin 6s linear infinite',
+        'spin-slow': 'spin 10s linear infinite',
       },
       colors: {
         dark: '#1B1F24',
         secondary: '#24292E',
+        darkgraymuted: {
+          50: '#bdc6d0',
+          100: '#b3bcc6',
+          200: '#a9b2bc',
+          300: '#9fa8b2',
+          400: '#959ea8',
+          500: '#8b949e',
+          600: '#818a94',
+          700: '#77808a',
+          800: '#6d7680',
+          900: '#636c76',
+        },
         darkGray: {
           50: '#686e7c',
           100: '#5e6472',
