@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import Footer from './components/Footer'
 import { motion } from 'framer-motion'
 import Bio from './components/Bio'
+import Works from './components/Works'
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
       <Layout>
         <Home />
         <Bio />
-        {/* <div className="spacer home-background"></div> */}
-        {/* <Contact /> */}
+        <Works />
         <Footer />
       </Layout>
     </>

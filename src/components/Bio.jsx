@@ -1,12 +1,49 @@
+import { useInView } from 'react-intersection-observer'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+
+const bioVariant = {
+  hidden: {},
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      delayChildren: 0,
+    },
+  },
+}
+
+const itemVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+}
+
 const Bio = () => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  })
+  const controls = useAnimation()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
   return (
-    <div name="bio" className="flex items-center justify-center flex-col container mt-20 mb-20 mx-auto max-w-xl">
+    <div name="bio" className="flex items-center justify-center flex-col container mb-20 px-4 sm:px-0 mx-auto max-w-xl">
       <h2 className="text-2xl mb-4 sm:w-full dark:text-white text-left self-start border-b-2 dark:border-darkGray-500">
         Bio
       </h2>
 
-      <ul className="flex flex-col items-center gap-4">
-        <li className="w-full group">
+      <motion.ul
+        ref={ref}
+        variants={bioVariant}
+        initial="hidden"
+        animate={controls}
+        className="flex flex-col items-center gap-4"
+      >
+        <motion.li variants={itemVariant} className="w-full group">
           <div className="flex items-center">
             <div className="flex items-center">
               <div className="glowing-circle bg-green-100 group-hover:bg-yellow-400"></div>
@@ -14,8 +51,8 @@ const Bio = () => {
             </div>
             <span>Tietoevry Create Norway</span>
           </div>
-        </li>
-        <li className="w-full group">
+        </motion.li>
+        <motion.li variants={itemVariant} className="w-full group">
           <div className="flex items-center">
             <div className="flex items-center">
               <div className="glowing-circle bg-green-100 group-hover:bg-yellow-400"></div>
@@ -23,8 +60,8 @@ const Bio = () => {
             </div>
             <span>Communicate</span>
           </div>
-        </li>
-        <li className="w-full group">
+        </motion.li>
+        <motion.li variants={itemVariant} className="w-full group">
           <div className="flex items-center">
             <div className="flex items-center">
               <div className="glowing-circle bg-green-100 group-hover:bg-yellow-400"></div>
@@ -32,8 +69,8 @@ const Bio = () => {
             </div>
             <span>Bachelor's in Computer Science from the University of Agder</span>
           </div>
-        </li>
-        <li className="w-full group">
+        </motion.li>
+        <motion.li variants={itemVariant} className="w-full group">
           <div className="flex items-center">
             <div className="flex items-center">
               <div className="glowing-circle bg-green-100 group-hover:bg-yellow-400"></div>
@@ -41,8 +78,8 @@ const Bio = () => {
             </div>
             <span>Born in Bergen, Norway</span>
           </div>
-        </li>
-      </ul>
+        </motion.li>
+      </motion.ul>
     </div>
   )
 }

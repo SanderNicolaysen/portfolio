@@ -58,22 +58,22 @@ const Navbar = () => {
               : 'hidden md:flex md:items-center'
           }`}
         >
-          <li className="cursor-pointer pl-4">
+          <li className="cursor-pointer">
             <Link onClick={handleClick} className="animated-b-border" to="home" smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li className="cursor-pointer pl-4">
+          <li className="cursor-pointer md:pl-6">
             <Link onClick={handleClick} className="animated-b-border" to="bio" smooth={true} duration={500}>
               Bio
             </Link>
           </li>
-          <li className="cursor-pointer pl-4">
-            <Link onClick={handleClick} className="animated-b-border" to="work" smooth={true} duration={500}>
-              Work
+          <li className="cursor-pointer md:pl-6">
+            <Link onClick={handleClick} className="animated-b-border" to="works" smooth={true} duration={500}>
+              Works
             </Link>
           </li>
-          <li className="cursor-pointer pl-4">
+          <li className="cursor-pointer md:pl-6">
             <Link onClick={handleClick} className="animated-b-border" to="contact" smooth={true} duration={500}>
               Contact
             </Link>

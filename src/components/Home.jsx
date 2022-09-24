@@ -11,14 +11,17 @@ const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
 
   return (
-    <div name="home" className="flex items-center justify-center flex-col container mx-auto min-h-screen pt-20">
+    <div
+      name="home"
+      className="flex items-center justify-center flex-col container mx-auto min-h-screen pt-20 px-2 sm:px-0"
+    >
       <div className="mb-4">
         <PersonCodingAnimated />
       </div>
-      <h1 className="text-4xl dark:text-white font-bold text-center uppercase">
+      <h1 className="text-3xl sm:text-4xl dark:text-white font-bold text-center uppercase">
         SANDER <span className="text-green-500">NICOLAYSEN</span>
       </h1>
-      <p className="uppercase font-bold text-xl mb-4 dark:text-darkgraymuted-300">Fullstack Developer</p>
+      <p className="uppercase font-bold text-xl mb-4 dark:text-darkgraymuted-300 text-center">Fullstack Developer</p>
       <p className="max-w-xl mb-8 text-center">
         {/* I’m a full-stack developer specializing in building (and occasionally
         designing) exceptional digital experiences. Currently, I’m focused on
@@ -53,7 +56,7 @@ const Home = () => {
           {<HiOutlineMail size={25} />}
         </motion.a>
       </div>
-      <ArrowDownButton />
+      {/* <ArrowDownButton /> */}
     </div>
   )
 }
