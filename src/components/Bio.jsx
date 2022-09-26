@@ -31,8 +31,8 @@ const Bio = () => {
   }, [controls, inView])
 
   return (
-    <div name="bio" className="flex items-center justify-center flex-col container mb-20 px-4 sm:px-0 mx-auto max-w-xl">
-      <h2 className="text-2xl mb-4 sm:w-full dark:text-white text-left self-start border-b-2 dark:border-darkGray-500">
+    <div name="bio" className="max-w-2xl flex justify-center flex-col container mb-20 px-4 sm:px-0 mx-auto">
+      <h2 className="font-semibold text-2xl mb-4 sm:w-full dark:text-white text-left self-start border-b-2 dark:border-darkGray-500">
         Bio
       </h2>
 
