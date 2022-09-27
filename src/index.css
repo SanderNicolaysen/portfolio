@@ -20,10 +20,12 @@
 }
 
 .glow {
-  box-shadow: 1.25px 0px 10px rgba(0, 255, 255, 0.25), -1.25px 0px 10px rgba(255, 0, 255, 0.25),
-    0px 0px 6px rgba(255, 255, 255, 0.25), inset 5px 0px 25px rgba(255, 0, 255, 0.25),
-    inset -2.5px 0px 10px rgba(0, 255, 255, 0.25), inset 2.5px 0px 10px rgba(255, 0, 255, 0.25),
-    inset 0px 0px 2.5px #ffffff;
+  box-shadow: 1.25px 0px 10px rgba(0, 255, 255, 0.25),
+    -1.25px 0px 10px rgba(255, 0, 255, 0.25),
+    0px 0px 6px rgba(255, 255, 255, 0.25),
+    inset 5px 0px 25px rgba(255, 0, 255, 0.25),
+    inset -2.5px 0px 10px rgba(0, 255, 255, 0.25),
+    inset 2.5px 0px 10px rgba(255, 0, 255, 0.25), inset 0px 0px 2.5px #ffffff;
 }
 
 .glowing-circle {
