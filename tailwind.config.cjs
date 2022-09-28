@@ -61,12 +61,24 @@ module.exports = {
           800: '#6c3f7d',
           900: '#623573',
         },
+        blue: {
+          50: '#66b1d0',
+          100: '#5ca7c6',
+          200: '#529dbc',
+          300: '#4893b2',
+          400: '#3e89a8',
+          500: '#347f9e',
+          600: '#2a7594',
+          700: '#206b8a',
+          800: '#166180',
+          900: '#0c5776',
+        },
       },
     },
   },
   plugins: [
     function ({ addVariant }) {
-      addVariant('child-hover', '& > *:hover')
+      addVariant('child-hover', '& > *:hover');
     },
   ],
-}
+};

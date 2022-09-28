@@ -1,19 +1,20 @@
-import { FaArrowDown } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+import { FaArrowDown, FaArrowRight } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
-const ArrowDownButton = () => {
+const ArrowDownButton = ({ children }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      className="py-2 px-4 text-darkGray-500 bg-green-500 rounded flex items-center justify-center cursor-pointer shadow-lg shadow-green-500/50"
+      className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
     >
       {/* <FaArrowDown className="flex-shrink-0" size={20} /> */}
-      <p className="uppercase flex items-center justify-center font-semibold text-sm">
-        Explore
-        <FaArrowDown className="inline ml-1 animate-bounce" size={14} />
+      <p className="uppercase flex items-center justify-center font-medium text-xs">
+        {children}
+        {/* <FaArrowRight className="inline ml-1 animate-bounce" size={14} /> */}
+        <span className="ml-1">{'>'}</span>
       </p>
     </motion.div>
-  )
-}
+  );
+};
 
-export default ArrowDownButton
+export default ArrowDownButton;
