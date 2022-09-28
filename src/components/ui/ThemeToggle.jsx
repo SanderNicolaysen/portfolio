@@ -19,7 +19,7 @@ const Toggle = () => {
         {<BsFillSunFill className="animate-spin-slow" color="#FBBE24" size={20} />}
       </span>
       <div
-        className={`w-11 h-7 bg-white dark:bg-blue-100 rounded-full p-1 items-center flex cursor-pointer ${
+        className={`w-11 h-7 bg-white rounded-full p-1 items-center flex cursor-pointer ${
           theme === 'light' ? 'justify-start' : 'justify-end'
         }`}
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
