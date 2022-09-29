@@ -16,7 +16,7 @@
 }
 
 .line-after-text {
-  @apply after:content-[''] after:relative after:w-[300px] after:left-[20px] after:h-[1px] after:bg-gray-400 dark:after:bg-darkGray-500;
+  @apply after:content-[''] after:relative after:w-[200px] sm:after:w-[300px] after:left-[20px] after:h-[1px] after:bg-gray-400 dark:after:bg-darkGray-500;
 }
 
 .tap-highlight-color-disable {

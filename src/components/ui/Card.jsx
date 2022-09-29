@@ -28,7 +28,7 @@ const Card = ({
 }) => {
   return (
     <motion.figure
-      className="group w-full relative mb-4 drop-shadow-md rounded-lg overflow-hidden"
+      className="group w-full relative mb-4 appearance-none border border-slate-300 dark:border-zinc-700 drop-shadow-md rounded-lg overflow-hidden"
       variants={variants}
     >
       <img
