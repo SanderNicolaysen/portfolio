@@ -15,6 +15,10 @@
   @apply after:content-[''] after:block after:m-auto after:h-[3px] after:w-0 after:bg-transparent after:transition-all after:duration-300 after:ease-in-out hover:after:bg-green-500 hover:after:w-full;
 }
 
+.line-after-text {
+  @apply after:content-[''] after:relative after:w-[300px] after:left-[20px] after:h-[1px] after:bg-gray-400 dark:after:bg-darkGray-500;
+}
+
 .tap-highlight-color-disable {
   -webkit-tap-highlight-color: transparent;
 }

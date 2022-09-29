@@ -1,10 +1,10 @@
-import Home from './components/Home'
-import Contact from './components/Contact'
-import Layout from './components/Layout'
-import Footer from './components/Footer'
-import { motion } from 'framer-motion'
-import Bio from './components/Bio'
-import Works from './components/Works'
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Layout from './components/Layout';
+import Footer from './components/Footer';
+import { motion } from 'framer-motion';
+import Bio from './components/Bio';
+import Work from './components/Work';
 
 function App() {
   return (
@@ -13,11 +13,11 @@ function App() {
       <Layout>
         <Home />
         <Bio />
-        <Works />
+        <Work />
         <Footer />
       </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
