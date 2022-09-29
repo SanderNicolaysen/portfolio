@@ -13,7 +13,7 @@ const Card = React.forwardRef(
         <img
           src={image}
           alt={alt}
-          className="aspect-[3/2] group-hover:scale-110 transition-all duration-200"
+          className="aspect-[3/2] object-cover group-hover:scale-110 transition-all duration-200"
         />
         <figcaption className="transition-all duration-500 opacity-0 group-hover:opacity-100 flex flex-col justify-between bg-darkGray-500 absolute top-0 left-0 w-full h-full z-10 p-4">
           <div className="">
