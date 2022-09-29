@@ -3,59 +3,78 @@ import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const Card = React.forwardRef(
-  ({ image, alt, year, githubLink, websiteLink, header, body, tools }, ref) => {
-    return (
-      <figure
-        ref={ref}
-        className="group w-full relative mb-4 drop-shadow-md rounded-lg overflow-hidden"
-      >
-        <img
-          src={image}
-          alt={alt}
-          className="group-hover:scale-110 transition-all duration-500 h-full w-full"
-        />
-        <figcaption className="transition-all duration-500 opacity-0 group-hover:opacity-100 flex flex-col justify-between bg-darkGray-500 absolute top-0 left-0 w-full h-full z-10 p-4">
-          <div className="">
-            <div className="flex justify-between items-center">
-              <p className="text-xs text-darkgraymuted-500">{year}</p>
-              <div className="flex gap-3 text-darkgraymuted-500">
-                {githubLink && (
-                  <a
-                    href={githubLink}
-                    target="_blank"
-                    className="hover:text-green-500 transition-all duration-300"
-                  >
-                    <FaGithub size={20} />
-                  </a>
-                )}
-                {websiteLink && (
-                  <a
-                    href={websiteLink}
-                    target="_blank"
-                    className="hover:text-green-500 transition-all duration-300"
-                  >
-                    <FiExternalLink size={20} />
-                  </a>
-                )}
-              </div>
+const imageVariant = {
+  // hover: { scale: 1.1 },
+};
+
+const overlayVariant = {
+  rest: { opacity: 0 },
+  hover: {
+    opacity: 100,
+    transition: { type: 'linear', duration: 1, ease: 'easeIn' },
+  },
+};
+
+const Card = ({
+  image,
+  alt,
+  year,
+  githubLink,
+  websiteLink,
+  header,
+  body,
+  tools,
+  variants,
+}) => {
+  return (
+    <motion.figure
+      className="group w-full relative mb-4 drop-shadow-md rounded-lg overflow-hidden"
+      variants={variants}
+    >
+      <img
+        src={image}
+        alt={alt}
+        className="transition-transform group-hover:scale-110 h-full w-full"
+      />
+      <figcaption className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between bg-darkGray-500 absolute top-0 left-0 w-full h-full z-10 p-4">
+        <div className="">
+          <div className="flex justify-between items-center">
+            <p className="text-xs text-darkgraymuted-500">{year}</p>
+            <div className="flex gap-3 text-darkgraymuted-500">
+              {githubLink && (
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  className="hover:text-green-500 transition-all duration-300"
+                >
+                  <FaGithub size={20} />
+                </a>
+              )}
+              {websiteLink && (
+                <a
+                  href={websiteLink}
+                  target="_blank"
+                  className="hover:text-green-500 transition-all duration-300"
+                >
+                  <FiExternalLink size={20} />
+                </a>
+              )}
             </div>
           </div>
-          <div className="">
-            <h3 className="text-xl mb-2 text-white">{header}</h3>
-            <p className="text-darkgraymuted-500">{body}</p>
-          </div>
-          <div className="">
-            <ul className="flex gap-2 text-xs text-darkgraymuted-600">
-              {tools.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </figcaption>
-      </figure>
-    );
-  }
-);
-
-export default motion(Card);
+        </div>
+        <div className="">
+          <h3 className="text-xl mb-2 text-white">{header}</h3>
+          <p className="text-darkgraymuted-500">{body}</p>
+        </div>
+        <div className="">
+          <ul className="flex gap-2 text-xs text-darkgraymuted-600">
+            {tools.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </figcaption>
+    </motion.figure>
+  );
+};
+export default Card;

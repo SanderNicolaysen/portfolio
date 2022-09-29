@@ -1,4 +1,3 @@
-import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
@@ -20,17 +19,6 @@ const itemVariant = {
 };
 
 const Bio = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
   return (
     <div
       name="bio"
@@ -41,10 +29,10 @@ const Bio = () => {
       </h2>
 
       <motion.ul
-        ref={ref}
+        whileInView="visible"
+        viewport={{ once: true }}
         variants={bioVariant}
         initial="hidden"
-        animate={controls}
         className="flex flex-col items-center gap-4"
       >
         <motion.li

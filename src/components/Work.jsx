@@ -7,7 +7,6 @@ import Optimera from '../assets/optimera.png';
 import Toolit from '../assets/toolit.png';
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 const workVariant = {
   hidden: {},
@@ -25,26 +24,16 @@ const itemVariant = {
 };
 
 const Works = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
   return (
     <section name="work" className="max-w-3xl container mx-auto px-6">
       <h2 className="font-semibold text-xl dark:text-white mb-6 dark:border-darkGray-500 flex items-center line-after-text">
         Work
       </h2>
       <motion.div
-        ref={ref}
+        whileInView="visible"
+        viewport={{ once: true }}
         variants={workVariant}
         initial="hidden"
-        animate={controls}
         className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full"
       >
         <Card
