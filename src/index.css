@@ -7,16 +7,16 @@
 @layer base {
 }
 
-.text-gradient-blue {
-  @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-600;
+.text-gradient-purple {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-purple-300 to-purple-700;
 }
 
 .animated-b-border {
-  @apply after:content-[''] after:block after:m-auto after:h-[3px] after:w-0 after:bg-transparent after:transition-all after:duration-300 after:ease-in-out hover:after:bg-green-500 hover:after:w-full;
+  @apply after:content-[''] after:block after:m-auto after:h-[3px] after:w-0 after:bg-transparent after:transition-all after:duration-300 after:ease-in-out hover:after:bg-purple-500 hover:after:w-full;
 }
 
 .line-after-text {
-  @apply after:content-[''] after:relative after:w-[200px] sm:after:w-[300px] after:left-[20px] after:h-[1px] after:bg-gray-400 dark:after:bg-darkGray-500;
+  @apply after:content-[''] after:relative after:w-[200px] sm:after:w-[300px] after:left-[20px] after:h-[1px] after:bg-gray-300 dark:after:bg-darkGray-500;
 }
 
 .tap-highlight-color-disable {

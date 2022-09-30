@@ -42,8 +42,8 @@ const Navbar = () => {
           <i className="group-hover:rotate-90 transition-all duration-500 mb-[5px]">
             {<FaRegStar />}
           </i>
-          <h1 className="font-bold sm:text-2xl animated-b-border group-hover:after:bg-green-500 group-hover:after:w-full">
-            S<span className="text-green-500">N</span>
+          <h1 className="font-bold sm:text-2xl animated-b-border group-hover:after:bg-purple-500 group-hover:after:w-full">
+            S<span className="text-purple-500">N</span>
           </h1>
         </Link>
         <div className="flex md:hidden">

@@ -25,7 +25,7 @@ const itemVariant = {
 
 const Works = () => {
   return (
-    <section name="work" className="max-w-3xl container mx-auto px-6">
+    <section name="work" className="max-w-3xl container mx-auto px-6 mb-20">
       <h2 className="font-semibold text-xl dark:text-white mb-6 dark:border-darkGray-500 flex items-center line-after-text">
         Work
       </h2>

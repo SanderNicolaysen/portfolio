@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const taskLineVariant = {
   hidden: { opacity: 0, pathLength: 0 },
@@ -8,7 +8,7 @@ const taskLineVariant = {
     pathLength: 1,
     transition: { duration: 1, ease: 'easeInOut' },
   },
-}
+};
 
 const tasksContainerVariant = {
   hidden: {},
@@ -18,19 +18,19 @@ const tasksContainerVariant = {
       delayChildren: 1,
     },
   },
-}
+};
 
 const taskVariant = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
-}
+};
 
 const svgVariant = {
   hidden: {},
   visible: {
     transition: {},
   },
-}
+};
 
 const circleVariant = {
   hidden: { opacity: 0.6 },
@@ -46,7 +46,7 @@ const circleVariant = {
   hover: {
     scale: 1.2,
   },
-}
+};
 
 const smokeVariant = {
   hidden: {},
@@ -60,42 +60,48 @@ const smokeVariant = {
       duration: 8,
     },
   },
-}
+};
 
-const shirtColors = ['#2F2E41', '#CACACA', '#347F9E', '#6abfb9', '#983F6B']
-const pantsColors = ['#2F2E41', '#334B49', '#9EB0E2', '#687CAB', '#983F6B']
+const shirtColors = ['#2F2E41', '#CACACA', '#347F9E', '#6abfb9', '#983F6B'];
+const pantsColors = ['#2F2E41', '#334B49', '#9EB0E2', '#687CAB', '#983F6B'];
 
 const PersonCodingAnimated = () => {
-  const [shirtColor, setShirtColor] = useState('#2F2E41')
-  const [curShirtIdx, setCurShirtIdx] = useState(1)
-  const [pantsColor, setPantsColor] = useState('#2F2E41')
-  const [curPantsIdx, setCurPantsIdx] = useState(1)
+  const [shirtColor, setShirtColor] = useState('#2F2E41');
+  const [curShirtIdx, setCurShirtIdx] = useState(1);
+  const [pantsColor, setPantsColor] = useState('#2F2E41');
+  const [curPantsIdx, setCurPantsIdx] = useState(1);
 
   const changeShirtColor = () => {
-    const color = shirtColors[curShirtIdx]
-    setShirtColor(color)
+    const color = shirtColors[curShirtIdx];
+    setShirtColor(color);
 
     if (curShirtIdx + 1 === shirtColors.length) {
-      setCurShirtIdx(0)
+      setCurShirtIdx(0);
     } else {
-      setCurShirtIdx((prev) => prev + 1)
+      setCurShirtIdx((prev) => prev + 1);
     }
-  }
+  };
 
   const changePantsColor = () => {
-    const color = pantsColors[curPantsIdx]
-    setPantsColor(color)
+    const color = pantsColors[curPantsIdx];
+    setPantsColor(color);
 
     if (curPantsIdx + 1 === pantsColors.length) {
-      setCurPantsIdx(0)
+      setCurPantsIdx(0);
     } else {
-      setCurPantsIdx((prev) => prev + 1)
+      setCurPantsIdx((prev) => prev + 1);
     }
-  }
+  };
 
   return (
     <>
-      <svg width="343" height="291" viewBox="0 44.56 330.46 246.44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="343"
+        height="291"
+        viewBox="0 44.56 330.46 246.44"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g id="undraw_version_control_re_mg66 1" clipPath="url(#clip0_75_67)">
           <g id="Group 100">
             <path
@@ -225,9 +231,18 @@ const PersonCodingAnimated = () => {
             stroke="#3F3D56"
             strokeWidth={0.6}
           />
-          <motion.g id="tasks" variants={tasksContainerVariant} initial="hidden" animate="visible">
+          <motion.g
+            id="tasks"
+            variants={tasksContainerVariant}
+            initial="hidden"
+            animate="visible"
+          >
             <motion.g id="task1" variants={taskVariant}>
-              <path id="Vector_10" d="M279.137 56.3297H228.692V60.8086H279.137V56.3297Z" fill="#347F9E" />
+              <path
+                id="Vector_10"
+                d="M279.137 56.3297H228.692V60.8086H279.137V56.3297Z"
+                fill="#6d59a7"
+              />
               <path
                 id="Vector_11"
                 d="M222.544 63.6407H211.865V53H222.544V63.6407ZM212.555 62.9532H221.854V53.6875H212.555L212.555 62.9532Z"
@@ -235,7 +250,11 @@ const PersonCodingAnimated = () => {
               />
             </motion.g>
             <motion.g id="task2" variants={taskVariant}>
-              <path id="Vector_12" d="M279.137 71.2594H228.692V75.7383H279.137V71.2594Z" fill="#347F9E" />
+              <path
+                id="Vector_12"
+                d="M279.137 71.2594H228.692V75.7383H279.137V71.2594Z"
+                fill="#6d59a7"
+              />
               <path
                 id="Vector_13"
                 d="M222.544 78.5702H211.865V67.9297H222.544V78.5702ZM212.555 77.8828H221.854V68.6172H212.555L212.555 77.8828Z"
@@ -243,7 +262,11 @@ const PersonCodingAnimated = () => {
               />
             </motion.g>
             <motion.g id="task3" variants={taskVariant}>
-              <path id="Vector_14" d="M279.137 86.189H228.692V90.6678H279.137V86.189Z" fill="#347F9E" />
+              <path
+                id="Vector_14"
+                d="M279.137 86.189H228.692V90.6678H279.137V86.189Z"
+                fill="#6d59a7"
+              />
               <path
                 id="Vector_15"
                 d="M222.544 93.4997H211.865V82.8593H222.544V93.4997ZM212.555 92.8123H221.854V83.5467H212.555L212.555 92.8123Z"
@@ -264,7 +287,12 @@ const PersonCodingAnimated = () => {
               fill="#FCDC9F"
             />
           </motion.g>
-          <motion.g id="smoke" variants={smokeVariant} initial="hidden" animate="visible">
+          <motion.g
+            id="smoke"
+            variants={smokeVariant}
+            initial="hidden"
+            animate="visible"
+          >
             <path
               id="Vector_16"
               d="M222.66 221.874C221.742 215.719 221.5 209.482 221.937 203.274L222.66 193C218.678 200.894 219.578 211.284 222.66 221.874V221.874Z"
@@ -297,8 +325,15 @@ const PersonCodingAnimated = () => {
             <feOffset />
             <feGaussianBlur stdDeviation="3" />
             <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_75_67" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_75_67"
+            />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -308,8 +343,15 @@ const PersonCodingAnimated = () => {
             <feOffset dx="-1.25" />
             <feGaussianBlur stdDeviation="5" />
             <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="effect1_dropShadow_75_67" result="effect2_dropShadow_75_67" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect1_dropShadow_75_67"
+              result="effect2_dropShadow_75_67"
+            />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -319,9 +361,21 @@ const PersonCodingAnimated = () => {
             <feOffset dx="1.25" />
             <feGaussianBlur stdDeviation="5" />
             <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="effect2_dropShadow_75_67" result="effect3_dropShadow_75_67" />
-            <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_75_67" result="shape" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect2_dropShadow_75_67"
+              result="effect3_dropShadow_75_67"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect3_dropShadow_75_67"
+              result="shape"
+            />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -331,8 +385,15 @@ const PersonCodingAnimated = () => {
             <feOffset />
             <feGaussianBlur stdDeviation="1.25" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-            <feBlend mode="normal" in2="shape" result="effect4_innerShadow_75_67" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="shape"
+              result="effect4_innerShadow_75_67"
+            />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -342,8 +403,15 @@ const PersonCodingAnimated = () => {
             <feOffset dx="2.5" />
             <feGaussianBlur stdDeviation="5" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="effect4_innerShadow_75_67" result="effect5_innerShadow_75_67" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect4_innerShadow_75_67"
+              result="effect5_innerShadow_75_67"
+            />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -353,8 +421,15 @@ const PersonCodingAnimated = () => {
             <feOffset dx="-2.5" />
             <feGaussianBlur stdDeviation="5" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="effect5_innerShadow_75_67" result="effect6_innerShadow_75_67" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect5_innerShadow_75_67"
+              result="effect6_innerShadow_75_67"
+            />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -364,8 +439,15 @@ const PersonCodingAnimated = () => {
             <feOffset dx="5" />
             <feGaussianBlur stdDeviation="12.5" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="effect6_innerShadow_75_67" result="effect7_innerShadow_75_67" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect6_innerShadow_75_67"
+              result="effect7_innerShadow_75_67"
+            />
           </filter>
           <clipPath id="clip0_75_67">
             <rect width="483" height="291" fill="white" />
@@ -373,7 +455,7 @@ const PersonCodingAnimated = () => {
         </defs>
       </svg>
     </>
-  )
-}
+  );
+};
 
-export default PersonCodingAnimated
+export default PersonCodingAnimated;
