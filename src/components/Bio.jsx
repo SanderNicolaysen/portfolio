@@ -20,7 +20,7 @@ const Bio = () => {
   return (
     <div
       name="bio"
-      className="max-w-3xl flex justify-center flex-col container mb-20 px-6 mx-auto pt-20"
+      className="max-w-3xl flex justify-center flex-col container mb-20 px-6 mx-auto"
     >
       <h2 className="relative flex items-center font-semibold text-2xl mb-6 sm:w-full dark:text-white text-left self-start dark:border-darkGray-500 line-after-text">
         Bio
@@ -35,7 +35,7 @@ const Bio = () => {
       >
         <motion.li
           variants={itemVariant}
-          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-30 dark:hover:bg-darkGray-600 hover:rounded"
+          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-10 dark:hover:bg-darkGray-600 hover:rounded"
         >
           <div className="flex items-center">
             <div className="flex items-center">
@@ -46,7 +46,7 @@ const Bio = () => {
         </motion.li>
         <motion.li
           variants={itemVariant}
-          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-30 dark:hover:bg-darkGray-600 hover:rounded"
+          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-10 dark:hover:bg-darkGray-600 hover:rounded"
         >
           <div className="flex items-center">
             <div className="flex items-center">
@@ -57,7 +57,7 @@ const Bio = () => {
         </motion.li>
         <motion.li
           variants={itemVariant}
-          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-30 dark:hover:bg-darkGray-600 hover:rounded"
+          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-10 dark:hover:bg-darkGray-600 hover:rounded"
         >
           <div className="flex items-center">
             <div className="flex items-center">
@@ -70,7 +70,7 @@ const Bio = () => {
         </motion.li>
         <motion.li
           variants={itemVariant}
-          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-30 dark:hover:bg-darkGray-600 hover:rounded"
+          className="w-full group p-2 hover:bg-purple-500 hover:bg-opacity-10 dark:hover:bg-darkGray-600 hover:rounded"
         >
           <div className="flex items-center">
             <div className="flex items-center">

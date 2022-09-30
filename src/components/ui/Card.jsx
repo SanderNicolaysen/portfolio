@@ -28,7 +28,7 @@ const Card = ({
 }) => {
   return (
     <motion.figure
-      className="group w-full relative mb-4 border border-gray-100 dark:border-zinc-700 rounded-lg"
+      className="group w-full relative mb-4 border border-gray-200 dark:border-darkGray-700 rounded-lg"
       variants={variants}
     >
       <img src={image} alt={alt} className="h-full w-full rounded-lg" />
@@ -40,7 +40,7 @@ const Card = ({
               <a
                 href={githubLink}
                 target="_blank"
-                className="hover:text-purple-500 transition-all duration-300"
+                className="hover:text-purple-100 transition-all duration-300"
               >
                 <FaGithub size={20} />
               </a>
@@ -49,7 +49,7 @@ const Card = ({
               <a
                 href={websiteLink}
                 target="_blank"
-                className="hover:text-purple-500 transition-all duration-300"
+                className="hover:text-purple-100 transition-all duration-300"
               >
                 <FiExternalLink size={20} />
               </a>
