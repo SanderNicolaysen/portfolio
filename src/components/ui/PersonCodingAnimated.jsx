@@ -228,7 +228,7 @@ const PersonCodingAnimated = () => {
             animate="visible"
             id="taskLine"
             d="M139.491 118.006 L183.03 74.2811 H203.585V73.5937"
-            stroke="#3F3D56"
+            stroke="#E4E4E4"
             strokeWidth={0.6}
           />
           <motion.g

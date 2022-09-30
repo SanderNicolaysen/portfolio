@@ -28,38 +28,32 @@ const Card = ({
 }) => {
   return (
     <motion.figure
-      className="group w-full relative mb-4 appearance-none border border-gray-100 dark:border-zinc-700 drop-shadow-md rounded-lg overflow-hidden"
+      className="group w-full relative mb-4 border border-gray-100 dark:border-zinc-700 rounded-lg"
       variants={variants}
     >
-      <img
-        src={image}
-        alt={alt}
-        className="transition-transform group-hover:scale-110 h-full w-full"
-      />
-      <figcaption className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between bg-darkGray-500 absolute top-0 left-0 w-full h-full z-10 p-4">
-        <div className="">
-          <div className="flex justify-between items-center">
-            <p className="text-xs text-darkgraymuted-500">{year}</p>
-            <div className="flex gap-3 text-darkgraymuted-500">
-              {githubLink && (
-                <a
-                  href={githubLink}
-                  target="_blank"
-                  className="hover:text-purple-500 transition-all duration-300"
-                >
-                  <FaGithub size={20} />
-                </a>
-              )}
-              {websiteLink && (
-                <a
-                  href={websiteLink}
-                  target="_blank"
-                  className="hover:text-purple-500 transition-all duration-300"
-                >
-                  <FiExternalLink size={20} />
-                </a>
-              )}
-            </div>
+      <img src={image} alt={alt} className="h-full w-full rounded-lg" />
+      <figcaption className="rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-between bg-darkGray-500 absolute top-0 left-0 w-full h-full z-10 p-4">
+        <div className="flex justify-between items-center">
+          <p className="text-xs text-darkgraymuted-500">{year}</p>
+          <div className="flex gap-3 text-darkgraymuted-500">
+            {githubLink && (
+              <a
+                href={githubLink}
+                target="_blank"
+                className="hover:text-purple-500 transition-all duration-300"
+              >
+                <FaGithub size={20} />
+              </a>
+            )}
+            {websiteLink && (
+              <a
+                href={websiteLink}
+                target="_blank"
+                className="hover:text-purple-500 transition-all duration-300"
+              >
+                <FiExternalLink size={20} />
+              </a>
+            )}
           </div>
         </div>
         <div className="">
