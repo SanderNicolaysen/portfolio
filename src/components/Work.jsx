@@ -1,12 +1,11 @@
-import Card from './ui/Card';
-import Flytoget from '../assets/flytoget.png';
-import Leo from '../assets/leo.png';
-import Space from '../assets/space-exploration-game.png';
-import Mario from '../assets/mario.jpeg';
-import Optimera from '../assets/optimera.png';
-import Toolit from '../assets/toolit.png';
-import { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import Card from './ui/Card'
+import Flytoget from '../assets/flytoget.png'
+import Leo from '../assets/leo.jpeg'
+import Space from '../assets/space-exploration-game.png'
+import Mario from '../assets/mario.jpeg'
+import Optimera from '../assets/optimera.png'
+import Toolit from '../assets/toolit.png'
+import { motion, useAnimation } from 'framer-motion'
 
 const workVariant = {
   hidden: {},
@@ -16,12 +15,12 @@ const workVariant = {
       delayChildren: 0.4,
     },
   },
-};
+}
 
 const itemVariant = {
   hidden: { opacity: 0, x: -25 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-};
+}
 
 const Works = () => {
   return (
@@ -98,7 +97,7 @@ const Works = () => {
         />
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default Works;
+export default Works

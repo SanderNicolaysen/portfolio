@@ -23,13 +23,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.input-style {
+  @apply rounded block w-full p-3 border border-gray-300 dark:border-darkGray-400 dark:bg-darkGray-600 text-sm shadow-sm dark:text-white
+  focus:outline-none focus:ring-1 focus:ring-purple-500 disabled:shadow-none
+  /* invalid:text-pink-600
+  focus:invalid:border-pink-500 focus:invalid:ring-pink-500; */;
+}
+
 .glow {
-  box-shadow: 1.25px 0px 10px rgba(0, 255, 255, 0.25),
-    -1.25px 0px 10px rgba(255, 0, 255, 0.25),
-    0px 0px 6px rgba(255, 255, 255, 0.25),
-    inset 5px 0px 25px rgba(255, 0, 255, 0.25),
-    inset -2.5px 0px 10px rgba(0, 255, 255, 0.25),
-    inset 2.5px 0px 10px rgba(255, 0, 255, 0.25), inset 0px 0px 2.5px #ffffff;
+  box-shadow: 1.25px 0px 10px rgba(0, 255, 255, 0.25), -1.25px 0px 10px rgba(255, 0, 255, 0.25),
+    0px 0px 6px rgba(255, 255, 255, 0.25), inset 5px 0px 25px rgba(255, 0, 255, 0.25),
+    inset -2.5px 0px 10px rgba(0, 255, 255, 0.25), inset 2.5px 0px 10px rgba(255, 0, 255, 0.25),
+    inset 0px 0px 2.5px #ffffff;
 }
 
 .glowing-circle {
