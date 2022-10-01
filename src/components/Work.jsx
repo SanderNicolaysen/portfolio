@@ -5,7 +5,7 @@ import Space from '../assets/space-exploration-game.png'
 import Mario from '../assets/mario.jpeg'
 import Optimera from '../assets/optimera.png'
 import Toolit from '../assets/toolit.png'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const workVariant = {
   hidden: {},
@@ -41,8 +41,8 @@ const Works = () => {
           year="2021 - 2022"
           websiteLink="https://minside.flytoget.no/en/login"
           header="Flytoget"
-          body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium doloremque laborum."
-          tools={['React', 'Redux', 'Formik', 'React Query']}
+          body={`Modernized the airport express train's website "My Page" for a better overview of receipts and bank cards.`}
+          tools={['React', 'Redux Toolkit', 'Formik', 'React Query']}
           variants={itemVariant}
         />
         <Card
@@ -51,7 +51,7 @@ const Works = () => {
           year="2019 - 2021"
           websiteLink="https://www.optimera.no/?gclid=CjwKCAjwvsqZBhAlEiwAqAHElbwV58kAcFavwPe9-0ueXUq-iqITT7x0hnZO_gt5Sj6ImazODHgD5hoCU6oQAvD_BwE"
           header="Optimera"
-          body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium doloremque laborum."
+          body="Developed a service platform for making data available for eCommerce in addition to several integrations with external systems."
           tools={['.NET Core', 'Azure', 'Azure Functions', 'Azure ServiceBus']}
           variants={itemVariant}
         />
@@ -61,7 +61,7 @@ const Works = () => {
           year="2019"
           githubLink="https://github.com/SanderNicolaysen/leo"
           header="Politivakta"
-          body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium doloremque laborum."
+          body="Developed a digital solution (POC) in collaboration with the police in Oslo to optimize their queuing system at the police station."
           tools={['Vue', 'Node', 'Express', 'MongoDB']}
           variants={itemVariant}
         />
@@ -71,7 +71,7 @@ const Works = () => {
           year="2018"
           githubLink="https://github.com/SanderNicolaysen/toolit"
           header="Toolit"
-          body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium doloremque laborum."
+          body="Developed a solution that allows the company and its employees to keep track of common tools."
           tools={['Vue', 'ASP.NET MVC']}
           variants={itemVariant}
         />
@@ -81,7 +81,7 @@ const Works = () => {
           year="2017"
           githubLink="https://github.com/SanderNicolaysen/binkbik"
           header="Space Exploration Game"
-          body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium doloremque laborum."
+          body='Developed an "open world" game. The game involves exploring a solar system, collecting resources and upgrading the spaceship.'
           tools={['C++', 'SFML']}
           variants={itemVariant}
         />
@@ -91,7 +91,7 @@ const Works = () => {
           year="2017"
           githubLink="https://github.com/SanderNicolaysen/SAM"
           header="Super Mario"
-          body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium doloremque laborum."
+          body="Developed a Super Mario Bros Clone in Java."
           tools={['Java', 'Swing']}
           variants={itemVariant}
         />

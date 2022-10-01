@@ -1,10 +1,8 @@
 import { Link } from 'react-scroll'
 import ThemeToggle from './ui/ThemeToggle'
-import { FaPaw } from 'react-icons/fa'
 import { FaRegStar } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
 import Hamburger from './ui/Hamburger'
-import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive'
 
 const Navbar = () => {

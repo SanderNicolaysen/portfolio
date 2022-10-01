@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 const bioVariant = {
   hidden: {},
@@ -9,19 +9,16 @@ const bioVariant = {
       delayChildren: 0.2,
     },
   },
-};
+}
 
 const itemVariant = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
-};
+}
 
 const Bio = () => {
   return (
-    <div
-      name="bio"
-      className="max-w-3xl flex justify-center flex-col container mb-20 px-6 mx-auto"
-    >
+    <div name="bio" className="max-w-3xl flex justify-center flex-col container mb-20 px-6 mx-auto">
       <h2 className="relative flex items-center font-semibold text-2xl mb-6 sm:w-full dark:text-white text-left self-start dark:border-darkGray-500 line-after-text">
         Bio
       </h2>
@@ -41,7 +38,7 @@ const Bio = () => {
             <div className="flex items-center">
               <span className="ml-2 mr-8">2021</span>
             </div>
-            <span>Tietoevry Create Norway</span>
+            <span>Tietoevry Create</span>
           </div>
         </motion.li>
         <motion.li
@@ -52,7 +49,7 @@ const Bio = () => {
             <div className="flex items-center">
               <span className="ml-2 mr-8 ">2019</span>
             </div>
-            <span>Communicate</span>
+            <span>Communicate Norge AS</span>
           </div>
         </motion.li>
         <motion.li
@@ -63,9 +60,7 @@ const Bio = () => {
             <div className="flex items-center">
               <span className="ml-2 mr-8">2017</span>
             </div>
-            <span>
-              Bachelor's in Computer Science from the University of Agder
-            </span>
+            <span>Bachelor's in Computer Science from the University of Agder</span>
           </div>
         </motion.li>
         <motion.li
@@ -81,7 +76,7 @@ const Bio = () => {
         </motion.li>
       </motion.ul>
     </div>
-  );
-};
+  )
+}
 
-export default Bio;
+export default Bio

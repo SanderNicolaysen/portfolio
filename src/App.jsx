@@ -1,10 +1,9 @@
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Layout from './components/Layout';
-import Footer from './components/Footer';
-import { motion } from 'framer-motion';
-import Bio from './components/Bio';
-import Work from './components/Work';
+import Home from './components/Home'
+import Contact from './components/Contact'
+import Layout from './components/Layout'
+import Footer from './components/Footer'
+import Bio from './components/Bio'
+import Work from './components/Work'
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Footer />
       </Layout>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
