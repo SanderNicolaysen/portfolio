@@ -1,6 +1,6 @@
 const Hamburger = ({ isOpen, onToggle }) => {
   return (
-    <button className="relative" onClick={onToggle}>
+    <button className="relative" onClick={onToggle} aria-label="Hamburger button">
       <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
         <div
           className={`bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${
