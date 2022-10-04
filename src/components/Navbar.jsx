@@ -1,29 +1,28 @@
-import { Link } from 'react-scroll'
-import ThemeToggle from './ui/ThemeToggle'
-import { FaRegStar } from 'react-icons/fa'
-import { useEffect, useState } from 'react'
-import Hamburger from './ui/Hamburger'
-import { useMediaQuery } from 'react-responsive'
+import { Link } from 'react-scroll';
+import ThemeToggle from './ui/ThemeToggle';
+import { FaRegStar } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import Hamburger from './ui/Hamburger';
+import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
-  console.log(isOpen)
+  const [isOpen, setIsOpen] = useState(false);
+  const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' });
 
   const handleHamburgerToggle = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   const handleClick = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     if (isBigScreen) {
-      setIsOpen(false)
+      setIsOpen(false);
     }
-    document.body.style.overflow = isOpen ? 'hidden' : 'auto'
-  }, [isOpen, isBigScreen])
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+  }, [isOpen, isBigScreen]);
 
   return (
     <>
@@ -37,7 +36,9 @@ const Navbar = () => {
           smooth={true}
           duration={500}
         >
-          <i className="group-hover:rotate-90 transition-all duration-500 mb-[5px]">{<FaRegStar />}</i>
+          <i className="group-hover:rotate-90 transition-all duration-500 mb-[5px]">
+            {<FaRegStar />}
+          </i>
           <h1 className="font-bold sm:text-2xl animated-b-border group-hover:after:bg-purple-500 group-hover:after:w-full">
             S<span className="text-purple-500">N</span>
           </h1>
@@ -58,7 +59,13 @@ const Navbar = () => {
           }`}
         >
           <li className="cursor-pointer">
-            <Link onClick={handleClick} className="animated-b-border" to="home" smooth={true} duration={500}>
+            <Link
+              onClick={handleClick}
+              className="animated-b-border"
+              to="home"
+              smooth={true}
+              duration={500}
+            >
               Home
             </Link>
           </li>
@@ -87,7 +94,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="cursor-pointer md:pl-6">
-            <Link onClick={handleClick} className="animated-b-border" to="contact" smooth={true} duration={500}>
+            <Link
+              onClick={handleClick}
+              className="animated-b-border"
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
               Contact
             </Link>
           </li>
@@ -99,7 +112,7 @@ const Navbar = () => {
         </ul>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
