@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/SanderNicolaysen/portfolio/blob/39b6f661d47d844f8ca95c993e93b2bafc25ca33/src/assets/home.png" width="100" />
+  <img alt="Logo" src="https://github.com/SanderNicolaysen/portfolio/blob/1c4bd38a38f37fdb1324d547d8f2abc527a87f25/public/android-chrome-192x192.png" width="100" />
 </div>
 <h1 align="center">
   sandernicolaysen.com
