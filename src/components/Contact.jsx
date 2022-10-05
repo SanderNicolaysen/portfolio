@@ -18,13 +18,19 @@ const itemVariant = {
 
 const Contact = () => {
   return (
-    <div name="contact" className="max-w-3xl flex justify-center flex-col container mb-20 px-6 mx-auto">
+    <div
+      name="contact"
+      className="max-w-3xl flex justify-center flex-col container mb-20 px-6 mx-auto"
+    >
       <div className="w-full max-w-4xl">
         <div className="mb-8">
           <h2 className="relative flex items-center font-semibold text-2xl mb-2 sm:w-full dark:text-white text-left self-start dark:border-darkGray-500 line-after-text">
             Contact Me
           </h2>
-          <p className="">Thanks for taking the time to reach out. Have a question or want to work together?</p>
+          <p className="">
+            Thanks for taking the time to reach out. Have a question or want to
+            work together?
+          </p>
         </div>
         <motion.form
           whileInView="visible"
