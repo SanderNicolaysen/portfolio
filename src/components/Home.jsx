@@ -30,6 +30,7 @@ const Home = () => {
           className="cursor-pointer dark:hover:text-white"
           target="_blank"
           href="https://github.com/SanderNicolaysen"
+          aria-label="Github"
         >
           {<FaGithub size={25} />}
         </motion.a>
@@ -38,6 +39,7 @@ const Home = () => {
           className="cursor-pointer dark:hover:text-white"
           target="_blank"
           href="https://www.linkedin.com/in/sandernicolaysen/"
+          aria-label="LinkedIn"
         >
           {<FaLinkedin size={25} />}
         </motion.a>
@@ -46,6 +48,7 @@ const Home = () => {
           className="cursor-pointer dark:hover:text-white"
           target="_blank"
           href="mailto: nicolaysensander96@gmail.com"
+          aria-label="Email"
         >
           {<HiOutlineMail size={25} />}
         </motion.a>
