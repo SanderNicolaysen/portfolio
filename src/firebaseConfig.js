@@ -1,5 +1,3 @@
-import { initializeApp } from 'firebase/app';
-
 // https://firebase.google.com/docs/projects/api-keys
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // https://vitejs.dev/guide/env-and-mode.html
@@ -13,6 +11,4 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 
-const app = initializeApp(firebaseConfig);
-
-export default app;
+export default firebaseConfig;
