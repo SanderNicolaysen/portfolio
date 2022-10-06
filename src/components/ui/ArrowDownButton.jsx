@@ -1,7 +1,6 @@
-import { FaArrowDown, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const ArrowDownButton = ({ children }) => {
+function ArrowDownButton({ children }) {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
@@ -15,6 +14,6 @@ const ArrowDownButton = ({ children }) => {
       </p>
     </motion.div>
   );
-};
+}
 
 export default ArrowDownButton;

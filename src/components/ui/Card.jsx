@@ -3,19 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const imageVariant = {
-  // hover: { scale: 1.1 },
-};
-
-const overlayVariant = {
-  rest: { opacity: 0 },
-  hover: {
-    opacity: 100,
-    transition: { type: 'linear', duration: 1, ease: 'easeIn' },
-  },
-};
-
-const Card = ({
+function Card({
   image,
   alt,
   year,
@@ -25,7 +13,7 @@ const Card = ({
   body,
   tools,
   variants,
-}) => {
+}) {
   return (
     <motion.figure
       className="group w-full relative mb-4 border border-gray-200 dark:border-darkGray-700 rounded-lg"
@@ -41,6 +29,7 @@ const Card = ({
                 href={githubLink}
                 target="_blank"
                 className="hover:text-purple-100 transition-all duration-300"
+                rel="noreferrer"
               >
                 <FaGithub size={20} />
               </a>
@@ -50,6 +39,7 @@ const Card = ({
                 href={websiteLink}
                 target="_blank"
                 className="hover:text-purple-100 transition-all duration-300"
+                rel="noreferrer"
               >
                 <FiExternalLink size={20} />
               </a>
@@ -70,5 +60,5 @@ const Card = ({
       </figcaption>
     </motion.figure>
   );
-};
+}
 export default Card;

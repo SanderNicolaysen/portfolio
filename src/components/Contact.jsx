@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const workVariant = {
   hidden: {},
@@ -9,14 +9,14 @@ const workVariant = {
       delayChildren: 0.4,
     },
   },
-}
+};
 
 const itemVariant = {
   hidden: { opacity: 0, x: -25 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-}
+};
 
-const Contact = () => {
+function Contact() {
   return (
     <div
       name="contact"
@@ -67,7 +67,7 @@ const Contact = () => {
             id="message"
             rows="5"
             required
-          ></motion.textarea>
+          />
           <motion.div variants={itemVariant} className="flex justify-end">
             <motion.button
               initial={{ background: '#6d59a7' }}
@@ -81,7 +81,7 @@ const Contact = () => {
         </motion.form>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

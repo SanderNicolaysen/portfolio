@@ -1,12 +1,12 @@
-import Navbar from './Navbar'
+import Navbar from './Navbar';
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   return (
     <div className="min-h-screen text-darkGray-500 dark:text-darkgraymuted-500 font-rubik dark:bg-dark">
       <Navbar />
       {children}
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
