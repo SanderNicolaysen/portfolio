@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import Card from './ui/Card';
-import Flytoget from '../assets/flytoget.png';
-import Leo from '../assets/leo.jpeg';
-import Space from '../assets/space-exploration-game.png';
-import Mario from '../assets/mario.jpeg';
-import Optimera from '../assets/optimera.png';
-import Toolit from '../assets/toolit.png';
+import Card from './Card';
+import Flytoget from '../../assets/flytoget.png';
+import Leo from '../../assets/leo.jpeg';
+import Space from '../../assets/space-exploration-game.png';
+import Mario from '../../assets/mario.jpeg';
+import Optimera from '../../assets/optimera.png';
+import Toolit from '../../assets/toolit.png';
 
 const workVariant = {
   hidden: {},

@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-}
-
 .text-gradient-purple {
   @apply text-transparent bg-clip-text bg-gradient-to-br from-purple-300 to-purple-700;
 }
@@ -31,10 +28,12 @@
 }
 
 .glow {
-  box-shadow: 1.25px 0px 10px rgba(0, 255, 255, 0.25), -1.25px 0px 10px rgba(255, 0, 255, 0.25),
-    0px 0px 6px rgba(255, 255, 255, 0.25), inset 5px 0px 25px rgba(255, 0, 255, 0.25),
-    inset -2.5px 0px 10px rgba(0, 255, 255, 0.25), inset 2.5px 0px 10px rgba(255, 0, 255, 0.25),
-    inset 0px 0px 2.5px #ffffff;
+  box-shadow: 1.25px 0px 10px rgba(0, 255, 255, 0.25),
+    -1.25px 0px 10px rgba(255, 0, 255, 0.25),
+    0px 0px 6px rgba(255, 255, 255, 0.25),
+    inset 5px 0px 25px rgba(255, 0, 255, 0.25),
+    inset -2.5px 0px 10px rgba(0, 255, 255, 0.25),
+    inset 2.5px 0px 10px rgba(255, 0, 255, 0.25), inset 0px 0px 2.5px #ffffff;
 }
 
 .glowing-circle {
@@ -47,45 +46,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.home-background {
-  background-image: url('../src/assets/layered-waves-haikei-top.svg');
-}
-
-.home-background-2 {
-  background-image: url('../src/assets/wave-haikei\ \(5\).svg');
-}
-
-.curve {
-  position: absolute;
-  height: 250px;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-
-.curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: #2b6cdd;
-}
-
-.curve::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: #12181b;
-  transform: translate(-4%, 40%);
-  z-index: 1;
 }
 
 :root {

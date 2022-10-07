@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, logEvent } from 'firebase/analytics';
 import firebaseConfig from './firebaseConfig';
-import Home from './components/Home';
-import Contact from './components/Contact';
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import Bio from './pages/Bio/Bio';
+import Work from './pages/Work/Work';
 import Layout from './components/Layout';
 import Footer from './components/Footer';
-import Bio from './components/Bio';
-import Work from './components/Work';
 
 function App() {
   const app = initializeApp(firebaseConfig);

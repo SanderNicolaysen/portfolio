@@ -2,7 +2,7 @@ import { FaMoon } from 'react-icons/fa';
 import { BsFillSunFill } from 'react-icons/bs';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const spring = {
   type: 'spring',

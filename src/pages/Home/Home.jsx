@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import PersonCodingAnimated from './ui/PersonCodingAnimated';
+import PersonCodingAnimated from './PersonCodingAnimated';
 
 function Home() {
   return (
