@@ -19,5 +19,6 @@
 - React
 - Tailwind
 - Framer Motion
+- Vitest
 - Firebase
 
