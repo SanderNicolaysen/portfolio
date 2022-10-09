@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import { FaRegStar } from 'react-icons/fa';
+// import { FaRegStar } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Hamburger from './ui/Hamburger';
@@ -33,8 +33,8 @@ function Navbar() {
         smooth
         duration={500}
       >
-        <i className="group-hover:rotate-90 transition-all duration-500 mb-[5px]">
-          <FaRegStar />
+        <i className="group-hover:scale-x-110 transition-all duration-500 mb-[5px]">
+          ✨
         </i>
         <h1 className="font-bold sm:text-2xl animated-b-border group-hover:after:bg-purple-500 group-hover:after:w-full">
           S<span className="text-purple-500">N</span>
